@@ -1,0 +1,128 @@
+@import "font.css";
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #820AD1; 
+}
+
+#logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Graphik-Medium';
+    font-size: 16pt;
+    margin-top: 64px;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
+    position: absolute;
+    width: 92%;
+    max-width: 28rem;
+    margin: 1rem auto 0;
+    left: 0;
+    right: 0;
+    max-height: 36rem;
+    height: 100%;
+    font-weight: 500;
+    top: 2rem;
+}
+
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 65px;
+    position: relative;
+    margin: 0 0 1rem;
+    top: 50px;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #820AD1;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    font-family: 'Graphik-Regular';
+    color: rgba(0,0,0,0.87);
+}
+
+label {
+    color: #777;
+    bottom: 7px;
+    font-size: 12pt;
+    position: absolute;
+    padding-bottom: 30px;
+    font-family: 'Graphik-Regular';
+    left: 67px;
+    pointer-events: none;
+
+}
+
+input:focus + .label-name,
+input:valid + .label-name {
+    transform: translateY(-40%);
+    font-size: 9pt;
+    color: #EF5648;
+    transition: .2s;
+    font-family: 'Graphik-Medium';
+
+}
+
+input:focus {
+    border-bottom: 1px dotted #EF5648;
+}
+
+.continuar {
+    height: 67px;
+    border: none;
+    color: #cacaca;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: rgba(255,255,255,0);
+    font-family: 'Graphik-Medium';
+    margin-left: 64px;
+    margin-top: 4.5rem;
+    width: 71%;
+    line-height: 2rem;
+    font-size: .8rem;
+}
+
+.continuar {
+    border: 1px solid #cacaca;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Graphik-Medium';
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color: #AB4BEA;
+    line-height: 1.5;
+
+}
+
+#btt {
+    padding-top: 1rem;
+}
+
+.links {
+    margin-top: 3rem;
+}
+
+a:hover {
+    color: #222;
+    transition: .3s ease;
+}

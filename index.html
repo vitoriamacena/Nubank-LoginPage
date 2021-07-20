@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nubank</title>
+    <link rel="icon" href="/images/nu-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="logo">
+        <img src="/images/new-logo-white.svg" alt="Nubank">
+    </div>
+    <div class="container">
+
+        <div class="login-card">
+            <p>Faça seu login</p>
+
+            <div class="input-wrapper">
+                <input type="text" name="" id="cpf" required autocomplete="off">
+                <label class="label-name" for="cpf" title="CPF">
+                    <span>CPF</span>
+                </label>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" name="" id="senha" required autocomplete="off">
+                <label class="label-name" for="senha" title="Senha">
+                    <span>Senha</span>
+                </label>
+            </div>
+            <button type="submit" class="continuar">CONTINUAR</button>
+            <div class="links">
+                <a href="">Esqueci minha senha ></a>
+                <a href="" id="btt">Ainda não sou cliente ></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery/3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#cpf').mask('000.000.000-00');
+        });
+    </script>
+</body>
+</html>
